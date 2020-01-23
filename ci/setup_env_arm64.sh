@@ -87,6 +87,7 @@ conda remove --all -q -y -n pandas-dev
 
 echo
 $IS_SUDO chmod -R 777 $MINICONDA_DIR
+$IS_SUDO apt-get install xvfb
 $IS_SUDO conda install botocore
 $IS_SUDO conda install python-dateutil=2.8.0
 $IS_SUDO conda install pytz
