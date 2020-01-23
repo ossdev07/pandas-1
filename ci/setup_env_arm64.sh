@@ -88,9 +88,7 @@ conda remove --all -q -y -n pandas-dev
 echo
 $IS_SUDO chmod -R 777 $MINICONDA_DIR
 $IS_SUDO conda install botocore
-$IS_SUDO conda install numpy
 $IS_SUDO conda install python-dateutil=2.8.0
-$IS_SUDO conda install hypothesis
 $IS_SUDO conda install pytz
 $IS_SUDO chmod -R 777 $MINICONDA_DIR
 
@@ -142,9 +140,7 @@ sudo chmod -R 777 $MINICONDA_DIR
 
 echo "[Install pandas]"
 $IS_SUDO chmod -R 777 $MINICONDA_DIR
-$IS_SUDO pip install numpy
-$IS_SUDO pip install hypothesis
-$IS_SUDO pip install cython
+$IS_SUDO pip install numpy hypothesis cython
 $IS_SUDO chmod -R 777 /home/travis/.cache/
 $IS_SUDO pip install --no-build-isolation -e .
 
